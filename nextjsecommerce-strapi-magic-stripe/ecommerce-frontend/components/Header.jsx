@@ -1,6 +1,9 @@
 import Link from "next/link";
+import { useContext } from "react";
 import { useRouter } from "next/router";
 import styles from "../styles/Header.module.css";
+
+import AuthContext from "../context/authContext";
 
 const Header = () => {
 	const router = useRouter();
@@ -10,6 +13,8 @@ const Header = () => {
 		event.preventDefault();
 		router.back();
 	};
+
+	const { user } = useContext(AuthContext);
 
 	return (
 		<div className={styles.nav}>
@@ -26,6 +31,18 @@ const Header = () => {
 						<h1>The E-Commerce</h1>
 					</a>
 				</Link>
+			</div>
+
+			<div className={styles.auth}>
+				{user ? (
+					<Link href="/account">
+						<a>{user.email}</a>
+					</Link>
+				) : (
+					<Link href="/login">
+						<a>Login</a>
+					</Link>
+				)}
 			</div>
 		</div>
 	);
