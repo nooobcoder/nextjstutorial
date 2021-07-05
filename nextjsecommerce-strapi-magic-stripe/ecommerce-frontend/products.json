@@ -1,156 +1,77 @@
-[
-	{
+{
+	"id": 1,
+	"name": "The Complete Strapi Course",
+	"content": "The complete strapi course available on Udemy",
+	"meta_description": "The complete strapi course, the course you should be taking",
+	"meta": "The complete strapi course - Entreprenerd Store",
+	"meta_title": "The Complete Strapi Course",
+	"price": 12.99,
+	"slug": "the-complete-strapi-course",
+	"published_at": "2021-07-04T14:20:24.309Z",
+	"created_at": "2021-07-04T14:20:17.607Z",
+	"updated_at": "2021-07-05T03:19:19.466Z",
+	"image": {
 		"id": 1,
-		"name": "The Complete Strapi Course",
-		"content": "The complete strapi course available on Udemy",
-		"meta_description": "The complete strapi course, the course you should be taking",
-		"meta": "The complete strapi course - Entreprenerd Store",
-		"meta_title": "The Complete Strapi Course",
-		"price": 12.99,
-		"slug": "the-complete-strapi-course",
-		"published_at": "2021-07-04T14:20:24.309Z",
-		"created_at": "2021-07-04T14:20:17.607Z",
-		"updated_at": "2021-07-05T03:19:19.466Z",
-		"image": {
-			"id": 1,
-			"name": "banner1.png",
-			"alternativeText": "",
-			"caption": "",
-			"width": 1024,
-			"height": 589,
-			"formats": {
-				"thumbnail": {
-					"name": "thumbnail_banner1.png",
-					"hash": "thumbnail_banner1_f7f43282cb",
-					"ext": ".png",
-					"mime": "image/png",
-					"width": 245,
-					"height": 141,
-					"size": 26.46,
-					"path": null,
-					"url": "/uploads/thumbnail_banner1_f7f43282cb.png"
-				},
-				"large": {
-					"name": "large_banner1.png",
-					"hash": "large_banner1_f7f43282cb",
-					"ext": ".png",
-					"mime": "image/png",
-					"width": 1000,
-					"height": 575,
-					"size": 320.46,
-					"path": null,
-					"url": "/uploads/large_banner1_f7f43282cb.png"
-				},
-				"medium": {
-					"name": "medium_banner1.png",
-					"hash": "medium_banner1_f7f43282cb",
-					"ext": ".png",
-					"mime": "image/png",
-					"width": 750,
-					"height": 431,
-					"size": 180.31,
-					"path": null,
-					"url": "/uploads/medium_banner1_f7f43282cb.png"
-				},
-				"small": {
-					"name": "small_banner1.png",
-					"hash": "small_banner1_f7f43282cb",
-					"ext": ".png",
-					"mime": "image/png",
-					"width": 500,
-					"height": 288,
-					"size": 79.95,
-					"path": null,
-					"url": "/uploads/small_banner1_f7f43282cb.png"
-				}
+		"name": "banner1.png",
+		"alternativeText": "",
+		"caption": "",
+		"width": 1024,
+		"height": 589,
+		"formats": {
+			"thumbnail": {
+				"name": "thumbnail_banner1.png",
+				"hash": "thumbnail_banner1_f7f43282cb",
+				"ext": ".png",
+				"mime": "image/png",
+				"width": 245,
+				"height": 141,
+				"size": 26.46,
+				"path": null,
+				"url": "/uploads/thumbnail_banner1_f7f43282cb.png"
 			},
-			"hash": "banner1_f7f43282cb",
-			"ext": ".png",
-			"mime": "image/png",
-			"size": 224.73,
-			"url": "/uploads/banner1_f7f43282cb.png",
-			"previewUrl": null,
-			"provider": "local",
-			"provider_metadata": null,
-			"created_at": "2021-07-04T14:19:09.945Z",
-			"updated_at": "2021-07-04T14:19:09.960Z"
-		}
-	},
-	{
-		"id": 2,
-		"name": "The NextJS with Strapi Course",
-		"content": "This course is still under development.  ",
-		"meta_description": "The nextjs description",
-		"meta": null,
-		"meta_title": "The nextjs with strapi course - Entreprenerd Store",
-		"price": 4.94,
-		"slug": "the-next-js-with-strapi-course",
-		"published_at": "2021-07-04T14:35:59.288Z",
-		"created_at": "2021-07-04T14:21:54.992Z",
-		"updated_at": "2021-07-04T14:35:59.322Z",
-		"image": {
-			"id": 1,
-			"name": "banner1.png",
-			"alternativeText": "",
-			"caption": "",
-			"width": 1024,
-			"height": 589,
-			"formats": {
-				"thumbnail": {
-					"name": "thumbnail_banner1.png",
-					"hash": "thumbnail_banner1_f7f43282cb",
-					"ext": ".png",
-					"mime": "image/png",
-					"width": 245,
-					"height": 141,
-					"size": 26.46,
-					"path": null,
-					"url": "/uploads/thumbnail_banner1_f7f43282cb.png"
-				},
-				"large": {
-					"name": "large_banner1.png",
-					"hash": "large_banner1_f7f43282cb",
-					"ext": ".png",
-					"mime": "image/png",
-					"width": 1000,
-					"height": 575,
-					"size": 320.46,
-					"path": null,
-					"url": "/uploads/large_banner1_f7f43282cb.png"
-				},
-				"medium": {
-					"name": "medium_banner1.png",
-					"hash": "medium_banner1_f7f43282cb",
-					"ext": ".png",
-					"mime": "image/png",
-					"width": 750,
-					"height": 431,
-					"size": 180.31,
-					"path": null,
-					"url": "/uploads/medium_banner1_f7f43282cb.png"
-				},
-				"small": {
-					"name": "small_banner1.png",
-					"hash": "small_banner1_f7f43282cb",
-					"ext": ".png",
-					"mime": "image/png",
-					"width": 500,
-					"height": 288,
-					"size": 79.95,
-					"path": null,
-					"url": "/uploads/small_banner1_f7f43282cb.png"
-				}
+			"large": {
+				"name": "large_banner1.png",
+				"hash": "large_banner1_f7f43282cb",
+				"ext": ".png",
+				"mime": "image/png",
+				"width": 1000,
+				"height": 575,
+				"size": 320.46,
+				"path": null,
+				"url": "/uploads/large_banner1_f7f43282cb.png"
 			},
-			"hash": "banner1_f7f43282cb",
-			"ext": ".png",
-			"mime": "image/png",
-			"size": 224.73,
-			"url": "/uploads/banner1_f7f43282cb.png",
-			"previewUrl": null,
-			"provider": "local",
-			"provider_metadata": null,
-			"created_at": "2021-07-04T14:19:09.945Z",
-			"updated_at": "2021-07-04T14:19:09.960Z"
-		}
+			"medium": {
+				"name": "medium_banner1.png",
+				"hash": "medium_banner1_f7f43282cb",
+				"ext": ".png",
+				"mime": "image/png",
+				"width": 750,
+				"height": 431,
+				"size": 180.31,
+				"path": null,
+				"url": "/uploads/medium_banner1_f7f43282cb.png"
+			},
+			"small": {
+				"name": "small_banner1.png",
+				"hash": "small_banner1_f7f43282cb",
+				"ext": ".png",
+				"mime": "image/png",
+				"width": 500,
+				"height": 288,
+				"size": 79.95,
+				"path": null,
+				"url": "/uploads/small_banner1_f7f43282cb.png"
+			}
+		},
+		"hash": "banner1_f7f43282cb",
+		"ext": ".png",
+		"mime": "image/png",
+		"size": 224.73,
+		"url": "/uploads/banner1_f7f43282cb.png",
+		"previewUrl": null,
+		"provider": "local",
+		"provider_metadata": null,
+		"created_at": "2021-07-04T14:19:09.945Z",
+		"updated_at": "2021-07-04T14:19:09.960Z"
 	}
-]
+}

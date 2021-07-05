@@ -2,11 +2,11 @@ import { Fragment } from "react";
 import Link from "next/link";
 
 import styles from "../styles/Home.module.css";
-import products from "../products.json";
-import { fromImageToURL, twoDecimals } from "../utils";
+// import products from "../products.json";
+import { fromImageToURL, twoDecimals, API_URL } from "../utils";
 import Head from "../components/Head";
 
-export default function Home() {
+export default function Home({ products }) {
 	return (
 		<Fragment>
 			<Head title={`The Modern Ecom`} />
@@ -29,3 +29,16 @@ export default function Home() {
 		</Fragment>
 	);
 }
+
+export const getStaticProps = async () => {
+	// TODO: Fetch the products
+	try {
+		const product_res = await fetch(`${API_URL}/products/`);
+		const product_json = await product_res.json();
+
+		// TODO: Return the products as props
+		return { props: { products: product_json } };
+	} catch (error) {
+		console.error(error);
+	}
+};
