@@ -7,6 +7,11 @@ const { sanitizeEntity } = require("strapi-utils");
  */
 
 module.exports = {
+  /**
+   * Only returns orders that belongs to the logged in user.
+   * @param {any} ctx
+   * @returns
+   */
   async find(ctx) {
     const { user } = ctx.state; // This is the user issued my magic
 
@@ -26,6 +31,11 @@ module.exports = {
       sanitizeEntity(entity, { model: strapi.models.order })
     );
   },
+  /**
+   * Return one order, as long it belongs to the user.
+   * @param {any} ctx
+   * @returns
+   */
   async findOne(ctx) {
     const { id } = ctx.params;
     const { user } = ctx.state;
