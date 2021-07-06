@@ -1,12 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap");
+
 html,
 body {
 	padding: 0;
 	margin: auto;
-	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-		Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 
-	max-width: 600px;
+	max-width: 1000px;
 	padding: 42px 24px;
+}
+
+* {
+	font-family: "Slabo 27px", Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
+		Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+	letter-spacing: 0.1em;
 }
 
 a {

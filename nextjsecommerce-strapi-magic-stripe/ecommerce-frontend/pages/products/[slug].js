@@ -15,7 +15,7 @@ const Product = ({ product }) => {
 				)}
 			</Head>
 
-			<h3>{product.name}</h3>
+			<h2>{product.name}</h2>
 			<img src={fromImageToURL(product.image)} />
 			<h3>{product.name}</h3>
 			<p>${twoDecimals(product.price)}</p>

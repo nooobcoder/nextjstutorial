@@ -11,8 +11,22 @@ const AuthProvider = ({ children }) => {
 	const [user, setUser] = useState(null);
 	const router = useRouter();
 
+	const checkUserLoggedIn = async () => {
+		try {
+			const isLoggedIn = await magic.user.isLoggedIn();
+			if (isLoggedIn) {
+				const { email } = await magic.user.getMetadata();
+				setUser({ email });
+			}
+		} catch (error) {
+			console.error(error);
+		}
+	};
+
 	useEffect(() => {
 		magic = new Magic(MAGIC_PUBLIC_KEY);
+
+		checkUserLoggedIn();
 	}, []);
 
 	/**
@@ -35,7 +49,7 @@ const AuthProvider = ({ children }) => {
 	 */
 	const logoutUser = async () => {
 		try {
-			await magic.auth.logout();
+			await magic.user.logout();
 			setUser(null);
 			router.push("/");
 		} catch (error) {

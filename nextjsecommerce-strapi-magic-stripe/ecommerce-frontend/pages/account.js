@@ -16,6 +16,8 @@ const Account = () => {
 			{user ? (
 				<Fragment>
 					<h2>Account Page</h2>
+					<hr />
+					<p>Logged in as {user.email}</p>
 					<a href="#" onClick={logoutUser}>
 						Logout
 					</a>
