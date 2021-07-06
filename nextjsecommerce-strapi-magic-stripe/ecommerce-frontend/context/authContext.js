@@ -19,9 +19,9 @@ const AuthProvider = ({ children }) => {
 				setUser({ email });
 			}
 
-			// !Just for testing
 			const token = await getToken();
-			console.log("MAGIC BEARER TOKEN: ", token);
+			// !Just for testing
+			// console.log("MAGIC BEARER TOKEN: ", token);
 		} catch (error) {
 			console.error(error);
 		}

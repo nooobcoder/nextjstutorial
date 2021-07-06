@@ -5,7 +5,7 @@ import { loadStripe } from "@stripe/stripe-js";
 import styles from "../styles/BuyButton.module.css";
 import AuthContext from "../context/authContext";
 import { STRIPE_PK, API_URL } from "../utils";
-console.log(STRIPE_PK);
+
 const stripePromise = loadStripe(STRIPE_PK);
 
 const BuyButton = ({ product }) => {
