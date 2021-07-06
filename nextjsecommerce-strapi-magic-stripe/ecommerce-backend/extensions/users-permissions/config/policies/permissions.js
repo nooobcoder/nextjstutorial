@@ -5,6 +5,10 @@ const _ = require("lodash");
 module.exports = async (ctx, next) => {
   let role;
 
+  // Adding magic.link's integration with the strapi admin panel
+  // !MORE INFO: https://www.npmjs.com/package/strapi-plugin-magic
+  await strapi.plugins["magic"].services["magic"].loginWithMagic(ctx);
+
   if (ctx.state.user) {
     // request is already authenticated in a different way
     return next();
