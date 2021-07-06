@@ -18,9 +18,23 @@ const AuthProvider = ({ children }) => {
 				const { email } = await magic.user.getMetadata();
 				setUser({ email });
 			}
+
+			// !Just for testing
+			const token = await getToken();
+			console.log("MAGIC BEARER TOKEN: ", token);
 		} catch (error) {
 			console.error(error);
 		}
+	};
+
+	// Returns the magic issued bearer token, to make authenticated requests.
+	// * The generated token lives for 15 minutes, and then you need to reissue the token.
+	// https://magic.link/docs/client-sdk/web/api-reference
+	const getToken = async () => {
+		try {
+			const token = await magic.user.getIdToken();
+			return token;
+		} catch (error) {}
 	};
 
 	useEffect(() => {
