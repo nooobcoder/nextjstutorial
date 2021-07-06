@@ -21,7 +21,7 @@ const AuthProvider = ({ children }) => {
 
 			// !Just for testing
 			const token = await getToken();
-			/* console.log("MAGIC BEARER TOKEN: ", token); */
+			console.log("MAGIC BEARER TOKEN: ", token);
 		} catch (error) {
 			console.error(error);
 		}

@@ -3,6 +3,7 @@ import Head from "next/head";
 // import products from "../../products.json";
 import { fromImageToURL } from "../../utils/urls";
 import { twoDecimals, API_URL } from "../../utils";
+import BuyButton from "../../components/BuyButton";
 // const product = products[0];
 
 const Product = ({ product }) => {
@@ -18,8 +19,10 @@ const Product = ({ product }) => {
 			<h2>{product.name}</h2>
 			<img src={fromImageToURL(product.image)} />
 			<h3>{product.name}</h3>
-			<p>${twoDecimals(product.price)}</p>
-
+			<p>
+				${twoDecimals(product.price)}
+				<BuyButton product={product} />
+			</p>
 			<p>{product.content}</p>
 		</Fragment>
 	);
